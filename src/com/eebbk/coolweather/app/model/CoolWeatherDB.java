@@ -130,8 +130,8 @@ public class CoolWeatherDB {
             do{
                County mCounty = new County();
                mCounty.setId(mCursor.getInt(mCursor.getColumnIndex("id")));
-               mCounty.setCountyName(mCursor.getString(mCursor.getColumnIndex("County_name")));
-               mCounty.setCountyCode(mCursor.getString(mCursor.getColumnIndex("County_code")));
+               mCounty.setCountyName(mCursor.getString(mCursor.getColumnIndex("county_name")));
+               mCounty.setCountyCode(mCursor.getString(mCursor.getColumnIndex("county_code")));
                mCounty.setCityId(cityId);
                mList.add(mCounty);
             }while(mCursor.moveToNext());
